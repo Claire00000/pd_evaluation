@@ -36,7 +36,7 @@ for i = 1:length(gt)
         if standard=='b'
             scale(1,j)=max(max(gt(i).point,[],1)-min(gt(i).point,[],1)+2);
         elseif standard=='h'
-            scale(1,j)=norm(gt(i).point(2,:)-gt(i).point(1,:));
+            scale(1,j)=norm(gt(i).point(14,:)-gt(i).point(13,:));
         end
         j=j+1;
     end
