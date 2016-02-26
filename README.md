@@ -1,6 +1,10 @@
 # pd_evaluation
 matlab code for PCP,PCK,PCJ evaluation methods
 
-1.the order of the key point is headtop, headbottom, left shoulder, right shoulder, left elbow, right elbow, left wrist, right wrist, left hip, right hip, left knee, right knee, left ankle, right ankle please change the test output keypoints order before use it.
+The PCK file is updated. It has three version which is corespondent to the three kind of label way we use(Namhoon,Wei-Chiu,and Deva).
+
+The two cov_fct are used to convert Wei-Chiu and Namhoon's order to Deva's order.
+
+
 
 
