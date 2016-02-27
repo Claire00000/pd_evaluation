@@ -28,12 +28,12 @@ for i=1:nData
     label_joint_pos_NL{i}       = label_joint_pos{i}(orderNL, :);
     label_joint_pos_rel_NL{i}   = label_joint_pos_rel{i}(orderNL, :);
     label_joint_state_NL{i}     = label_joint_state{i}(:, orderNL);
-    output_joint_pos_NL{i,1}      = output_joint_pos{i}(:, orderNLxy);
-    good_img_index_NL=good_img_index;
+    output_joint_pos_NL{i,1}    = output_joint_pos{i}(:, orderNLxy);
+    good_img_index_NL           = good_img_index;
 end
 
 save('labeled_data_NL.mat', 'label_joint_pos_NL', 'label_joint_pos_rel_NL', ...
-    'label_joint_state_NL', 'output_joint_pos_NL', 'bbox_size','good_img_index');
+    'label_joint_state_NL', 'output_joint_pos_NL', 'bbox_size','good_img_index_NL');
 
 
 
